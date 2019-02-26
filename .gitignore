@@ -1,0 +1,9 @@
+*.pdf
+*.zip
+*.iml
+**/out
+**/.gradle
+.idea
+
+!exercises*.pdf
+!Assignment*.pdf
