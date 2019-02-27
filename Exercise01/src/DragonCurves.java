@@ -6,6 +6,16 @@ import java.util.List;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
+/**
+ * d1 = "F";
+ * r1 = "F";
+ *
+ * d2 = d1 + "L" + r1;
+ * r2 = d1 + "R" + r1;
+ *
+ * d3 = d2 + "L" + r2;
+ * r3 = d2 + "R" + r2;
+ */
 public class DragonCurves {
 
     private static Direction direction = Direction.RIGHT;

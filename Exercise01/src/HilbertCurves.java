@@ -1,5 +1,18 @@
 import java.awt.*;
 
+/**
+ * Draw from the bottom left corner
+ * The initial direction is up
+ *
+ * r1 = FRFRF
+ * l1 = FLFLF
+ *
+ * r2 = R  l1 RF r1 LFL r1 FR l1  R
+ * l2 = L  r1 LF l1 RFR l1 FL r1  L
+ *
+ * r3 = R  l2 RF r2 LFL r2 FR l2  R
+ * l3 = L  r2 LF l2 RFR l2 FL r2  L
+ */
 public class HilbertCurves {
 
     private static Direction direction = Direction.UP;
