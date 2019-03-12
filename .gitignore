@@ -5,6 +5,6 @@
 **/.gradle
 .idea
 
-!exercises*.pdf
+!Exercise*.pdf
 !Assignment*.pdf
 !Lab*.pdf
