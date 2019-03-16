@@ -13,7 +13,7 @@ public class WordCount {
         char c;
         int index;
         int count;
-        int encode;
+        long encode;
         String encodeStr;
 
         Data(char c, int index) {
@@ -27,7 +27,7 @@ public class WordCount {
                 e.append(String.format("%02X", b));
             }
             encodeStr = e.toString();
-            encode = Integer.parseInt(encodeStr, 16);
+            encode = Long.parseLong(encodeStr, 16);
         }
     }
 
@@ -74,7 +74,7 @@ public class WordCount {
             case "char":
                 return Comparator.comparingInt(it -> it.c);
             case "code":
-                return Comparator.comparingInt(it -> it.encode);
+                return Comparator.comparingLong(it -> it.encode);
             case "count":
                 return Comparator.comparingInt(it -> -it.count);
             default:
