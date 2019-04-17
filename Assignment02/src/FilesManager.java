@@ -5,7 +5,6 @@ import java.util.function.Consumer;
 
 public class FilesManager {
 
-
     public static void main(String[] args) {
 
         try {
@@ -48,7 +47,7 @@ public class FilesManager {
     }
 
     private static void totalSize(Path p) {
-        System.out.printf("%.0fk", fileSize(p.toFile()) / 1024.0);
+        System.out.printf("%dk", fileSize(p.toFile()) / 1024);
     }
 
     private static long fileSize(File file) {
