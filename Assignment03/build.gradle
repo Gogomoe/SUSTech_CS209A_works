@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'moe.gogo'
+version '0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.11.3'
+}
