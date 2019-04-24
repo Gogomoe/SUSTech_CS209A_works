@@ -1,4 +1,4 @@
-package project
+package client
 
 import javafx.concurrent.Worker
 import javafx.scene.Group
