@@ -1,4 +1,5 @@
 node_modules
 view/dist
+view/css/.sass-cache
 
 *.log

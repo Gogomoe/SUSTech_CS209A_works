@@ -1,4 +1,65 @@
 body {
-  margin: 0; }
+  margin: 0;
+  font-size: 18px; }
+
+.g-page-container {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 15%;
+  padding-left: 15%; }
+
+#m-main-page {
+  margin-top: 8vh;
+  width: 100%; }
+
+.m-keyword-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh; }
+  .m-keyword-area .m-keyword {
+    box-sizing: border-box;
+    width: 20vw;
+    height: 250px;
+    margin: 1em;
+    transition: margin-top, border, .3s; }
+    .m-keyword-area .m-keyword > * {
+      width: 100%; }
+    .m-keyword-area .m-keyword .u-keyword {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.8);
+      height: 80%;
+      font-size: 2.5em; }
+    .m-keyword-area .m-keyword .u-detail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20%;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      transition: background-color .3s; }
+    .m-keyword-area .m-keyword:hover {
+      margin-top: -1em;
+      border: 3px solid #2387e4; }
+      .m-keyword-area .m-keyword:hover .u-detail {
+        background: #2387e4; }
+    .m-keyword-area .m-keyword.fade-in {
+      animation: v-fade-in .3s; }
+    .m-keyword-area .m-keyword.v-hide {
+      opacity: 0;
+      margin-top: -10em; }
+@keyframes v-fade-in {
+  0% {
+    margin-top: -10em;
+    opacity: 0; }
+  80% {
+    margin-top: 1em; }
+  100% {
+    margin-top: 0;
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
